@@ -1,0 +1,18 @@
+﻿<Window x:Class="MemberListConverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PlaceHolderSample"
+        mc:Ignorable="d"
+        Title="MemberListConverter" Height="350" Width="800" ResizeMode="NoResize">
+    <Grid Background="Black" Opacity="0.8">
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="66,28,0,0" TextWrapping="Wrap" Text="変換元CSV" VerticalAlignment="Top" Width="279" FontSize="20" Foreground="White" />
+        <TextBox x:Name="src_path" HorizontalAlignment="Left" Height="30" Margin="66,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="514" FontSize="18" Background="Black" Foreground="White"/>
+        <Button Content="参照" Margin="633,63,66,0" VerticalAlignment="Top" Height="30" FontSize="13" Click="Refs_Click"/>
+        <TextBox x:Name="additinalMem" HorizontalAlignment="Left" Height="30" Margin="66,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="514" FontSize="18" local:PlaceHolderBehavior.PlaceHolderText="hoge, fuga, ..." Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="66,110,0,0" TextWrapping="Wrap" Text="追加分HN" VerticalAlignment="Top" Width="182" Foreground="White" FontSize="20"/>
+        <Button Content="変換実行" Margin="633,242,66,0" Height="30" VerticalAlignment="Top" Click="Run_Convert"/>
+        <Border BorderBrush="White" BorderThickness="0,0,0,1" Margin="20,0,20,100"/>
+    </Grid>
+</Window>
